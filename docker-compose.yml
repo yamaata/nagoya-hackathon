@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    build: ./docker
+    container_name: 'nagoya-hackathon'
+    ports:
+     - '1080:1080'
+    volumes:
+     - ./:/www/nagoya-hackathon
